@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  services.xserver.videoDrivers = [ nvidia ];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
     modesetting.enable = true;   # Wayland + better performance

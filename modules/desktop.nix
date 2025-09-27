@@ -1,12 +1,9 @@
-
 { pkgs, ... }:
 
 {
-  # Enable display server
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
 
-  # Window managers
   services.xserver.windowManager.i3.enable = true;
   programs.sway.enable = true;
 
@@ -15,7 +12,7 @@
     enable = true;
     profiles = {
       "dual" = {
-        outputs = {
+        config = {
           "DP-0" = {
             enable = true;
             primary = true;
@@ -40,3 +37,4 @@
     qt6ct      # Qt theming tool
   ];
 }
+

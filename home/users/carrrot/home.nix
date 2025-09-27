@@ -5,5 +5,10 @@
 
   programs.zsh.enable = true;
 
-  home.stateVersion = "24.05";
+  home.stateVersion = "25.05";
+
+imports = [
+    ./programs/kanshi.nix
+    # add other program configs here
+  ];
 }

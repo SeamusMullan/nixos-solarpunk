@@ -10,7 +10,7 @@
     vesktop
     calibre
     plexamp
-    jdownloader
+    jdownloader2
     milkytracker
   ];
 }

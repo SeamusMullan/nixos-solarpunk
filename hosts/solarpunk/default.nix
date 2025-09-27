@@ -1,11 +1,17 @@
-{ config, pkgs, lib, ... }:
+
+{ ... }:
 {
   imports = [
     ./hardware-configuration.nix
     ../../modules/base.nix
-    # add more modules as you implement them
+    ../../modules/users.nix
+    ../../modules/nvidia.nix
+    ../../modules/audio.nix
+    ../../modules/desktop.nix
+    ../../modules/gaming.nix
+    ../../modules/creative.nix
   ];
 
-  # Target the NixOS release you intend to install first.
-  system.stateVersion = "25.05";
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 }

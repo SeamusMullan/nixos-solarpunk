@@ -11,18 +11,18 @@
   services.autorandr = {
     enable = true;
     profiles = {
-      dual = {
+      "dual" = {
         outputs = {
-          DP-0 = {
+          "DP-0" = {
             enable = true;
             primary = true;
-            mode = 2560x1440;
-            position = 0x480;
+            mode = "2560x1440";
+            position = "0x480";
           };
-          HDMI-0 = {
+          "HDMI-0" = {
             enable = true;
-            mode = 1080x1920;
-            position = 2560x0;
+            mode = "1080x1920";
+            position = "2560x0";
           };
         };
       };
@@ -33,17 +33,17 @@
   services.kanshi = {
     enable = true;
     profiles = {
-      dual = {
+      "dual" = {
         outputs = [
           {
-            criteria = DP-0;
-            mode = 2560x1440;
-            position = 0,480;
+            criteria = "DP-0";
+            mode = "2560x1440";
+            position = "0,480";
           }
           {
-            criteria = HDMI-0;
-            mode = 1080x1920;
-            position = 2560,0;
+            criteria = "HDMI-0";
+            mode = "1080x1920";
+            position = "2560,0";
           }
         ];
       };

@@ -7,7 +7,6 @@
     modesetting.enable = true;
     nvidiaPersistenced = true;
     powerManagement.enable = true;
-    powerManagement.finegrained = true;
 
     # Keep proprietary driver for maximum gaming/pro app compatibility
     open = false;
